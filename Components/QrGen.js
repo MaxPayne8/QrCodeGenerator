@@ -59,7 +59,7 @@ const QrGen = () => {
   return (
     <div className="bg-slate-300 ">
       {qrorBar === "qr" && (
-        <ul className="flex justify-between items-center px-10 md:px-24  bg-slate-500 border-2 border-white p-2">
+        <ul className="flex justify-between items-center px-10 md:px-24  bg-slate-700 border-2 border-white p-2">
           <li
             className={`flex flex-col justify-center items-center hover:bg-slate-900 hover:cursor-pointer rounded-lg duration-150 p-2 px-4 ${
               showUrl && " bg-slate-900"

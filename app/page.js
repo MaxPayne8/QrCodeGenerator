@@ -1,9 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
-import Caraousel from "@/Components/Caraousel";
 import Header from "@/Components/Header";
 import QrGen from "@/Components/QrGen";
 import { Provider } from "react-redux";
@@ -23,7 +19,6 @@ const page = () => {
         <Header />
         <QrGen />
       </div>
-      {/* <Caraousel /> */}
     </Provider>
   );
 };

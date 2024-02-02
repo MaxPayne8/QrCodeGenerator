@@ -68,10 +68,10 @@ const QrCode = () => {
   return (
     <div className="body1 min-h-screen">
       <ToastContainer />
-      <div className="center_container flex flex-col gap-2 md:gap-0 md:flex-row justify-between py-4 px-4  md:px-40 min-h-screen">
+      <div className="center_container flex flex-col-reverse gap-2 md:gap-8 lg:flex-row justify-between py-4 px-4  md:px-40 min-h-screen">
         <div className="section1 " data-aos="fade-right">
           <div
-            className="p-2 border-2 border-black hidden md:block  mx-auto justify-center items-center"
+            className="p-2 border-2 border-black hidden lg:block  mx-auto justify-center items-center"
             ref={componentRef}
           >
             <QRCode
@@ -86,7 +86,7 @@ const QrCode = () => {
             />
           </div>
           <div
-            className="p-2 border-2 border-black  md:hidden flex justify-center items-center"
+            className="p-2 border-2 border-black  lg:hidden flex justify-center items-center"
             ref={componentRef}
           >
             <QRCode
@@ -100,10 +100,29 @@ const QrCode = () => {
               logoOpacity={1}
             />
           </div>
+
+          <div>
+            <button
+              className={`text-center w-full bg-green-500 text-white p-1 rounded-lg m-1 ${
+                printsize && "scale-90"
+              }`}
+              variant="success"
+              onClick={handlePrint}
+              onMouseDown={() => setprintSize(true)}
+              onMouseUp={() => setprintSize(false)}
+            >
+              Download
+            </button>
+          </div>
         </div>
-        <div
-          className="section2  md:w-[40%] mt-10 md:mt-0 "
+
+        <form
+          className="section2  lg:w-[60%]  mt-10 md:mt-0 "
           data-aos="fade-left"
+          onSubmit={(e) => {
+            e.preventDefault();
+            create_qr();
+          }}
         >
           <div className="sub_section flex flex-col justify-center items-center border-2 border-black ">
             <h2 className="font-semibold text-2xl">Generate QR Code</h2>
@@ -244,30 +263,16 @@ const QrCode = () => {
                 }`}
                 type="button"
                 // disabled={qr_value == ""}
-                onClick={create_qr}
+
                 onMouseDown={() => setSize(true)}
                 onMouseUp={() => setSize(false)}
+                onClick={create_qr}
               >
                 Create QR Code
               </button>
-              <div
-                className={`text-center bg-green-500 text-white p-1 rounded-lg m-1 ${
-                  printsize && "scale-90"
-                }`}
-              >
-                <button
-                  className="responsive-button"
-                  variant="success"
-                  onClick={handlePrint}
-                  onMouseDown={() => setprintSize(true)}
-                  onMouseUp={() => setprintSize(false)}
-                >
-                  Download
-                </button>
-              </div>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

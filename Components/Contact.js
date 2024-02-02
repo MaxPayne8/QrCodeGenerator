@@ -243,7 +243,7 @@ const Contact = () => {
   return (
     <div className="body1">
       <ToastContainer />
-      <div className="center_container flex flex-col gap-14 md:gap-0 md:flex-row justify-between py-4 px-4  md:px-40">
+      <div className="center_container flex flex-col-reverse gap-14 md:gap-0 md:flex-row justify-between py-4 px-4  md:px-40">
         <div className="section1 " data-aos="fade-right">
           <div
             className="p-2 border-2 border-black hidden md:block  mx-auto justify-center items-center"
@@ -275,9 +275,27 @@ const Contact = () => {
               logoOpacity={1}
             />
           </div>
+
+          <button
+            className={`text-center bg-green-500 w-full text-white p-1 rounded-lg m-1 ${
+              printsize && "scale-90"
+            }`}
+            variant="success"
+            onClick={handlePrint}
+            onMouseDown={() => setprintSize(true)}
+            onMouseUp={() => setprintSize(false)}
+          >
+            Download
+          </button>
         </div>
         <div className="section2 w-full md:w-[60%] " data-aos="fade-left">
-          <div className="sub_section flex flex-col  items-center border-2 border-black ">
+          <form
+            className="sub_section flex flex-col  items-center border-2 border-black "
+            onSubmit={(e) => {
+              e.preventDefault();
+              create_qr();
+            }}
+          >
             <h2 className="font-semibold text-2xl" name="top">
               Generate QR Code
             </h2>
@@ -493,20 +511,6 @@ const Contact = () => {
                     )}
                   </div>
                 </div>
-
-                {/* <input
-                      className="w-full border-2 border-black my-2 rounded-lg px-1"
-                      value={phone}
-                      onChange={(e) => {
-                        setPhone(e.target.value);
-                      }}
-                      placeholder="Phone Number"
-                    />
-                    {phoneerr && (
-                      <label className="text-red-800 text-sm font-semibold -mt-2">
-                        please enter phone number
-                      </label>
-                    )} */}
               </div>
 
               <p className=" mt-4  mb-2 font-semibold ">Select Logo</p>
@@ -633,24 +637,8 @@ const Contact = () => {
                   Create QR Code
                 </button>
               </Link>
-
-              <div
-                className={`text-center bg-green-500 text-white p-1 rounded-lg m-1 ${
-                  printsize && "scale-90"
-                }`}
-              >
-                <button
-                  className="responsive-button"
-                  variant="success"
-                  onClick={handlePrint}
-                  onMouseDown={() => setprintSize(true)}
-                  onMouseUp={() => setprintSize(false)}
-                >
-                  Download
-                </button>
-              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

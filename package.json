@@ -31,7 +31,8 @@
     "react-to-print": "^2.14.15",
     "react-toastify": "^10.0.4",
     "reactstrap": "^9.2.2",
-    "typeface-roboto": "^1.1.13"
+    "typeface-roboto": "^1.1.13",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

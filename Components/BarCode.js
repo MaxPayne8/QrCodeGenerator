@@ -45,7 +45,7 @@ const BarCode_Page = () => {
 
       const a = document.createElement("a");
       a.href = dataUrl;
-      a.download = "qr_code.png";
+      a.download = "bar_code.png";
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
@@ -93,7 +93,6 @@ const BarCode_Page = () => {
                 size && "scale-90"
               }`}
               type="button"
-              // disabled={qr_value == ""}
               onClick={generate}
               onMouseDown={() => setSize(true)}
               onMouseUp={() => setSize(false)}
