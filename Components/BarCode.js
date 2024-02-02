@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-// import "./BarCode.scss";
+
 import Barcode from "react-barcode";
 import Aos from "aos";
 import "aos/dist/aos.css";

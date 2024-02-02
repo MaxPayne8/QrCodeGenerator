@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import QRCode from "qrcode";
 import { FaLink } from "react-icons/fa";
 import { CiTextAlignCenter } from "react-icons/ci";
 import { MdContactPhone } from "react-icons/md";
@@ -8,12 +7,10 @@ import { FaFilePdf } from "react-icons/fa6";
 import QrCode from "./MakeQr";
 import BarCode_Page from "./BarCode";
 import { useSelector } from "react-redux";
-import BarCodeSeries from "./BarCodeSeries";
+
 import Contact from "./Contact";
 import Pdf from "./Pdf";
 import FreeTxtQr from "./FreeTxtQr";
-
-// import QRCode from "react-qr-code";
 
 const QrGen = () => {
   var QRCode = require("qrcode");
