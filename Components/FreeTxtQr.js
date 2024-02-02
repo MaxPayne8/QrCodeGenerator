@@ -68,10 +68,10 @@ const FreeTxtQr = () => {
   return (
     <div className="body1">
       <ToastContainer />
-      <div className="center_container flex flex-col-reverse gap-2 md:gap-8 lg:flex-row justify-between py-4 px-4  md:px-40 min-h-screen">
+      <div className="center_container flex flex-col gap-14 md:gap-0 md:flex-row justify-between py-4 px-4  md:px-40 min-h-screen">
         <div className="section1 " data-aos="fade-right">
           <div
-            className="p-2 border-2 border-black hidden lg:block  mx-auto justify-center items-center"
+            className="p-2 border-2 border-black hidden md:block  mx-auto justify-center items-center"
             ref={componentRef}
           >
             <QRCode
