@@ -62,7 +62,7 @@ const QrGen = () => {
         <ul className="flex justify-between items-center px-10 md:px-24  bg-slate-700 border-2 border-white p-2">
           <li
             className={`flex flex-col justify-center items-center hover:bg-slate-900 hover:cursor-pointer rounded-lg duration-150 p-2 px-4 ${
-              showUrl && " bg-slate-900"
+              showUrl && " bg-slate-900 shadow-md shadow-white"
             }`}
             onClick={() => {
               setShowUrl(true);
@@ -78,7 +78,7 @@ const QrGen = () => {
           </li>
           <li
             className={`flex flex-col justify-center items-center hover:bg-slate-900 hover:cursor-pointer rounded-lg duration-150 p-2 px-4 ${
-              showTxt && " bg-slate-900"
+              showTxt && " bg-slate-900 shadow-md shadow-white"
             }`}
             onClick={() => {
               setShowUrl(false);
@@ -95,7 +95,7 @@ const QrGen = () => {
           </li>
           <li
             className={`flex flex-col justify-center items-center hover:bg-slate-900 hover:cursor-pointer rounded-lg duration-150 p-2 px-4 ${
-              showContact && " bg-slate-900"
+              showContact && " bg-slate-900 shadow-md shadow-white"
             }`}
             onClick={() => {
               setShowUrl(false);
@@ -111,7 +111,7 @@ const QrGen = () => {
           </li>
           <li
             className={`flex flex-col justify-center items-center hover:bg-slate-900 hover:cursor-pointer rounded-lg duration-150 p-2 px-4 ${
-              showPdf && " bg-slate-900"
+              showPdf && " bg-slate-900 shadow-md shadow-white"
             }`}
             onClick={() => {
               setShowUrl(false);

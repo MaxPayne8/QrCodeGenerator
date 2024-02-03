@@ -65,10 +65,10 @@ const Pdf = () => {
   return (
     <div className="body1">
       <ToastContainer />
-      <div className="center_container flex flex-col-reverse gap-14 md:gap-0 md:flex-row justify-between py-4 px-4  md:px-40 min-h-screen">
+      <div className="center_container flex flex-col-reverse gap-2 lg:gap-28 lg:flex-row justify-between py-4 px-4  md:px-40 min-h-screen">
         <div className="section1 " data-aos="fade-right">
           <div
-            className="p-2 border-2 border-black hidden md:block  mx-auto justify-center items-center"
+            className="p-2 border-2 border-black hidden lg:block  mx-auto justify-center items-center"
             ref={componentRef}
           >
             <QRCode
@@ -83,7 +83,7 @@ const Pdf = () => {
             />
           </div>
           <div
-            className="p-2 border-2 border-black  md:hidden flex justify-center items-center"
+            className="p-2 border-2 border-black  lg:hidden flex justify-center items-center"
             ref={componentRef}
           >
             <QRCode
@@ -110,7 +110,7 @@ const Pdf = () => {
             Download
           </button>
         </div>
-        <div className="section2 w-full md:w-[40%] " data-aos="fade-left">
+        <div className="section2 w-full lg:w-[60%] " data-aos="fade-left">
           <form
             className="sub_section flex flex-col justify-center items-center border-2 border-black "
             onSubmit={(e) => {

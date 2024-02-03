@@ -65,9 +65,9 @@ const BarCode_Page = () => {
       <h1 className="text-center p-2 text-2xl font-semibold bg-slate-600 text-slate-200">
         Generate BarCode
       </h1>
-      <div className="main_container flex flex-col md:flex-row justify-between items-center  px-4 md:px-40 m-10">
+      <div className="main_container flex flex-col lg:flex-row justify-between items-center  px-4 lg:px-40 m-10">
         <div
-          className="container1 border-2 border-black w-full md:w-[40%] p-2"
+          className="container1 border-2 border-black w-full lg:w-[40%] p-2"
           data-aos="fade-right"
         >
           <div>

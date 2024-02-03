@@ -29,7 +29,7 @@ const Header = () => {
           <Typewriter
             options={{
               strings: [
-                "Generate Qr code and Bar code for your Organization with Logo!!",
+                "Generate Qr code  with Logo and Bar code for your Organization!!",
                 "Powered by Etech Cube!!",
               ],
               autoStart: true,
@@ -42,7 +42,7 @@ const Header = () => {
           <ul className="flex pr-0 md:pr-8">
             <li
               className={`hover:scale-105 duration-100 cursor-pointer hover:font-semibold ${
-                bold && "font-extrabold underline text-red-700"
+                bold && "font-extrabold underline text-red-700 "
               }`}
               onClick={() => {
                 dispatch(addQr("qr"));
