@@ -72,7 +72,7 @@ const Header = () => {
             >
               NFC
             </li>
-            <li
+            {/* <li
               className={`hover:scale-105 duration-100 cursor-pointer hover:font-semibold ${
                 bold === "phone" && "font-extrabold underline text-red-700"
               }`}
@@ -93,7 +93,7 @@ const Header = () => {
               }}
             >
               SHARE NUMBER
-            </li>
+            </li> */}
           </ul>
         </div>
       </ul>
