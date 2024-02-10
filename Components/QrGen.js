@@ -11,6 +11,9 @@ import { useSelector } from "react-redux";
 import Contact from "./Contact";
 import Pdf from "./Pdf";
 import FreeTxtQr from "./FreeTxtQr";
+import NFCReaderWriter from "./Nfc";
+import GenQr from "./GenQr";
+import ScanQr from "./ScanQr";
 
 const QrGen = () => {
   var QRCode = require("qrcode");
@@ -131,7 +134,10 @@ const QrGen = () => {
       {showUrl && qrorBar === "qr" && <QrCode />}
       {showTxt && qrorBar === "qr" && <FreeTxtQr />}
       {qrorBar === "bar" && <BarCode_Page />}
-      {qrorBar === "barseries" && <BarCodeSeries />}
+      {qrorBar === "nfc" && <NFCReaderWriter />}
+      {qrorBar === "phone" && <GenQr />}
+      {qrorBar === "phonescan" && <ScanQr />}
+
       {showContact && qrorBar === "qr" && <Contact />}
       {showPdf && qrorBar === "qr" && <Pdf />}
     </div>

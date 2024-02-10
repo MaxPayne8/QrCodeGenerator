@@ -13,8 +13,3 @@
     font-family: "Raleway", sans-serif;
   }
 }
-
-.slick-prev:before,
-.slick-next:before {
-  color: blueviolet !important;
-}

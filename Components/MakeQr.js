@@ -151,7 +151,7 @@ const QrCode = () => {
               <div className="style_container flex justify-center">
                 <input
                   type="file"
-                  className="flex justify-center bg-gray-400 w-64 "
+                  className="flex justify-center bg-gray-400 w-64  "
                   onChange={(e) => {
                     const selectedFile = e.target.files[0];
                     if (selectedFile) {
