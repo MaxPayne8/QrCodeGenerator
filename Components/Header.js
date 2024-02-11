@@ -37,33 +37,33 @@ const Header = () => {
         </div>
 
         <div>
-          <ul className="flex pr-0 md:pr-8 gap-2 sm:gap-6">
+          <ul className="flex pr-0 md:pr-8 gap-4 sm:gap-6">
             <li
               className={`hover:scale-105 duration-100 cursor-pointer hover:font-semibold ${
-                bold === "qr" && "font-extrabold underline text-red-700 "
+                bold === "qr" && "font-extrabold text-red-700 "
               }`}
               onClick={() => {
                 dispatch(addQr("qr"));
                 setBold("qr");
               }}
             >
-              QR CODE
+              QR <span className="hidden sm:inline-block">CODE</span>
             </li>
 
             <li
               className={`hover:scale-105 duration-100 cursor-pointer hover:font-semibold ${
-                bold === "bar" && "font-extrabold underline text-red-700"
+                bold === "bar" && "font-extrabold  text-red-700"
               }`}
               onClick={() => {
                 dispatch(addQr("bar"));
                 setBold("bar");
               }}
             >
-              BAR CODE
+              BAR <span className="hidden sm:inline-block">CODE</span>
             </li>
             <li
               className={`hover:scale-105 duration-100 cursor-pointer hover:font-semibold ${
-                bold === "nfc" && "font-extrabold underline text-red-700"
+                bold === "nfc" && "font-extrabold text-red-700"
               }`}
               onClick={() => {
                 dispatch(addQr("nfc"));
