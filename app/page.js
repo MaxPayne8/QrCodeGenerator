@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Header from "@/Components/Header";
 import QrGen from "@/Components/QrGen";
+import Login from "@/Components/Login";
 import { Provider } from "react-redux";
 import appStore from "./Utils/appStore";
 import { Inter } from "next/font/google";
@@ -16,8 +17,9 @@ const page = () => {
   return (
     <Provider store={appStore}>
       <div>
-        <Header />
-        <QrGen />
+        <Login />
+        {/* <Header />
+        <QrGen /> */}
       </div>
     </Provider>
   );
