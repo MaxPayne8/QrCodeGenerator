@@ -1,5 +1,7 @@
+import { Provider } from "react-redux";
 import "./globals.css";
 import { Inter, Roboto_Mono } from "next/font/google";
+import appStore from "./Utils/appStore";
 
 const inter = Inter({
   subsets: ["latin"],

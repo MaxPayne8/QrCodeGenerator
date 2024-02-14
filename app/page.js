@@ -6,6 +6,8 @@ import Login from "@/Components/Login";
 import { Provider } from "react-redux";
 import appStore from "./Utils/appStore";
 import { Inter } from "next/font/google";
+import RealLogin from "@/Components/RealLogin";
+import QrHome from "@/Components/QrHome";
 
 // If loading a variable font, you don't need to specify the font weight
 const inter = Inter({
@@ -17,6 +19,8 @@ const page = () => {
   return (
     <Provider store={appStore}>
       <div>
+        {/* <QrHome /> */}
+        {/* <RealLogin /> */}
         <Login />
         {/* <Header />
         <QrGen /> */}
