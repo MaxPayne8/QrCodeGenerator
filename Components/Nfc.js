@@ -27,7 +27,7 @@ const Nfc = () => {
         <h1 className="text-center text-2xl font-semibold">NFC Tool</h1>
       </div>
 
-      <div className="App-container flex justify-between w-96 p-10">
+      <div className="App-container flex justify-between w-96 -mt-5">
         <button
           onClick={() => onHandleAction({ scan: "scanning", write: null })}
           className=" bg-slate-950 text-slate-200 p-2 rounded-lg w-20"

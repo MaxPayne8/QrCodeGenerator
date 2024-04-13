@@ -307,7 +307,7 @@ const Contact = () => {
                 </label>
                 <div className=" flex flex-col md:flex-row justify-between gap-2 md:gap-16">
                   <div className="flex flex-col ">
-                    <h1 className="text-sm  ">Please enter Full Name* </h1>
+                    <h1 className="text-sm  ">Full Name* </h1>
                     <Input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={name}
@@ -323,7 +323,7 @@ const Contact = () => {
                     )}
                   </div>
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter Email Address* </h1>
+                    <h1 className="text-sm ">Email Address* </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={email}
@@ -341,7 +341,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-16">
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter Phone Number* </h1>
+                    <h1 className="text-sm ">Phone Number* </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={phone}
@@ -357,7 +357,7 @@ const Contact = () => {
                     )}
                   </div>
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter Organization* </h1>
+                    <h1 className="text-sm ">Enter Organization* </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={org}
@@ -375,7 +375,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-16">
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter Designation* </h1>
+                    <h1 className="text-sm "> Enter Designation* </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={title}
@@ -391,7 +391,7 @@ const Contact = () => {
                     )}
                   </div>
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter Fax Number </h1>
+                    <h1 className="text-sm ">Enter Fax Number </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={fax}
@@ -409,7 +409,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-16">
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter Street </h1>
+                    <h1 className="text-sm ">Enter Street </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={street}
@@ -425,7 +425,7 @@ const Contact = () => {
                     )}
                   </div>
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter City* </h1>
+                    <h1 className="text-sm ">Enter City* </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={city}
@@ -443,7 +443,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-16">
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter Region* </h1>
+                    <h1 className="text-sm ">Enter Region* </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={region}
@@ -459,7 +459,7 @@ const Contact = () => {
                     )}
                   </div>
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter Zip Code </h1>
+                    <h1 className="text-sm ">Enter Zip Code </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={post}
@@ -477,7 +477,7 @@ const Contact = () => {
                 </div>
                 <div className="flex flex-col md:flex-row justify-between gap-2 md:gap-16">
                   <div className="flex flex-col">
-                    <h1 className="text-sm ">Please enter Country* </h1>
+                    <h1 className="text-sm ">Enter Country* </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"
                       value={country}
@@ -494,7 +494,7 @@ const Contact = () => {
                   </div>
                   <div className="flex flex-col">
                     <h1 className="text-sm ">
-                      Please enter Url/Website/Social{" "}
+                      Enter Url/Website/Social{" "}
                     </h1>
                     <input
                       className="w-full border-2 border-black my-2 rounded-lg px-1"

@@ -19,9 +19,9 @@ const page = () => {
   return (
     <Provider store={appStore}>
       <div>
-        {/* <QrHome /> */}
+        <QrHome />
         {/* <RealLogin /> */}
-        <Login />
+       {/* <Login /> */}
         {/* <Header />
         <QrGen /> */}
       </div>
