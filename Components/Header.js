@@ -14,7 +14,7 @@ const Header = () => {
       <ul className="flex justify-between px-8  items-center py-4 ">
         <li>
           <Image
-            src={etechcube}
+            src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/272908087/original/d82064937361c7fd199c36e87d79062d927f5d5d/create-a-custom-qr-code-with-your-logo-in-the-background.jpg"
             className="w-28 md:w-36 h-12 rounded-lg mix-blend bg-slate-100 hover:cursor-pointer hover:scale-110 duration-150	"
             alt="logo"
             onClick={() => {
