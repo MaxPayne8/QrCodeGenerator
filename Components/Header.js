@@ -28,7 +28,7 @@ const Header = () => {
             options={{
               strings: [
                 "Generate Qr code  with Logo and Bar code for your Organization!!",
-                "Powered by Etech Cube!!",
+                "Powered by React-Qr!!",
               ],
               autoStart: true,
               loop: true,
